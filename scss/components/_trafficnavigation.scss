@@ -1,0 +1,24 @@
+.traffic-navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.traffic-navigation ul li {
+  padding: 7px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stays:hover,
+.stays.active {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $green;
+  color: $white;
+  border-radius: 10px;
+  font-weight: 200;
+}

@@ -1,0 +1,55 @@
+//Message User
+
+.form-field,
+textarea {
+  margin: 0.5em auto;
+  width: 100%;
+  outline: none;
+  border: $border-settings;
+}
+
+.message-user {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-field {
+  height: 40px;
+}
+
+.form-area {
+  height: 120px;
+  resize: none;
+}
+
+#button-send {
+  width: 100%;
+  padding: 0;
+}
+
+//// Message User Autocomplete Search
+
+.results ul {
+  display: none;
+}
+
+form {
+  position: relative;
+}
+.results.active {
+  border-left: $border-settings;
+  border-right: $border-settings;
+  border-bottom: $border-settings;
+  position: absolute;
+  background: $white;
+  width: 99.6%;
+}
+
+.active ul li {
+  text-align: left;
+  padding: 5px;
+  cursor: $cursor-pointer;
+}
+.results ul li:hover {
+  background: #ececec;
+}

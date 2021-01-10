@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+main {
+  grid-area: main;
+}
+.header-container {
+  background-color: $purple;
+  display: grid;
+  grid-template-columns: 2fr auto auto auto;
+  align-items: center;
+  padding: 2px 3%;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 10px 20%;
+}

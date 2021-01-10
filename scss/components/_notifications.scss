@@ -1,0 +1,93 @@
+// Notification Bell
+
+.container-notifications {
+  position: relative;
+}
+.notification-green-bell {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: $light-green;
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
+
+// Notifications Menu
+
+.menu {
+  position: absolute;
+  top: 80px;
+  right: 105px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 350px;
+
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  border: 1px solid #ededed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 105px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 20px 0;
+  display: flex;
+  border-bottom: 1px solid #ededed;
+  align-items: center;
+}
+
+.menu img {
+  height: 2.5em;
+  border-radius: 100px;
+}
+
+.menu ul li img {
+  margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.menu ul li:hover img {
+  opacity: 1;
+}
+
+.menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+  word-break: normal;
+}
+
+.menu ul li:hover a {
+  color: black;
+  background-color: inherit;
+}
+
+.menu ul li span {
+  color: $purple;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  cursor: $cursor-pointer;
+}

@@ -1,0 +1,37 @@
+.profile-image {
+  border-radius: 25px;
+}
+
+.members-text {
+  padding-left: 10px;
+  flex-grow: 2;
+}
+
+.new-members {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  p {
+    margin: 0 auto;
+  }
+  a {
+    padding: 0;
+    color: $purple;
+    word-break: break-all;
+  }
+  a:hover {
+    background-color: inherit;
+  }
+}
+
+.arrow {
+  border: solid $purple;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 9px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
