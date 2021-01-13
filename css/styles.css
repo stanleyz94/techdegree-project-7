@@ -50,6 +50,28 @@ p {
   cursor: pointer;
 }
 
+@keyframes ringing {
+  10% {
+    transform: rotate(-18deg);
+  }
+  40% {
+    transform: rotate(-38deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.icon-bell:hover {
+  animation: ringing 0.5s ease-in-out;
+  animation-iteration-count: 2;
+}
+
 .container-notifications {
   border-right: 1px solid #514f78;
   margin-right: 1.1em;

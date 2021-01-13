@@ -221,7 +221,6 @@ const hideNotification = document.querySelector('.menu');
 
 
 
-
 for(let i=0; i < removeNotification.length; i++){
     removeNotification[i].addEventListener('click', (event) =>{
         
